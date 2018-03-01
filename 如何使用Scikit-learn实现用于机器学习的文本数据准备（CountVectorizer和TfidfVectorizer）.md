@@ -58,4 +58,5 @@
 ### 参考
 
 *  [如何使用Scikit-learn实现用于机器学习的文本数据准备（CountVectorizer和TfidfVectorizer）](http://www.infoq.com/cn/articles/prepare-text-data-machine-learning-scikit-learn) 
-*  实例详见
+*  实例详见[**Logistic-regression-with-words-and-char-n-grams**](https://github.com/xjwsfgcs/Logistic-regression-with-words-and-char-n-grams)
+
