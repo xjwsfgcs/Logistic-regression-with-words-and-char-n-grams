@@ -35,6 +35,9 @@
 
 ### TfidfVectorizer—计算单词权重
 
+* 词语的重要性与它在文件中出现的次数成正比，但同时随着它在语料库中出现的频率成反比下降。
+
+
 * 首先简单的单词频数统计会出现问题，有些单词比如'the'会出现很多次，但是他们的出现对语意并没有太多的参考作用。
   * 有一个解决办法就是统计单词权重—TF-IDF(词频-逆文档频率，Term Frequency-Inverse Document Frequency),代表一个词对于一个文档的重要程度。
   * 词频：指的是某一个给定的词语在一篇文档中出现的次数
@@ -54,9 +57,15 @@
 
 * Vector.idf  是怎么计算和使用的？
 * transform()后得到的编码向量有什么意义？？？
+* 以上两个问题，参考此文档：<http://blog.csdn.net/baimafujinji/article/details/51476117>
 
 ### 参考
 
 *  [如何使用Scikit-learn实现用于机器学习的文本数据准备（CountVectorizer和TfidfVectorizer）](http://www.infoq.com/cn/articles/prepare-text-data-machine-learning-scikit-learn) 
+*  http://sklearn.apachecn.org/cn/0.19.0/modules/preprocessing.html#preprocessing
 *  实例详见[**Logistic-regression-with-words-and-char-n-grams**](https://github.com/xjwsfgcs/Logistic-regression-with-words-and-char-n-grams)
+*  参数问题：
+   *  [Feature extraction---scikit-learn](http://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction)  [中文版](http://sklearn.apachecn.org/cn/0.19.0/modules/feature_extraction.html#tfidf)
+   *  [TfidfVectorizer参数设置](http://blog.csdn.net/du_qi/article/details/51564303)
+   *  http://www.yeayee.com/article-6661996-1.html
 
